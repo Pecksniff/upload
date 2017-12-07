@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+        >
+
+   <!-- 构造注入:简单类型 -->
+   <bean id="emp" class="com.etcxm_03DI_Constructor_xml.Employee">
+      <constructor-arg name="name" value="rose" ></constructor-arg>
+      <constructor-arg name="age" value="19" ></constructor-arg>
+      <constructor-arg name="salary" value="20000" ></constructor-arg>
+      <constructor-arg name="url" value="https://www.baidu.com" ></constructor-arg>
+   </bean>
+   
+  <!-- 构造注入:复合(引用)类型 -->
+    <bean id="EmployeeDao" class="com.etcxm_03DI_Constructor_xml.EmployeeDao"></bean>
+    <bean id="employeeService" class="com.etcxm_03DI_Constructor_xml.EmployeeService">
+      <constructor-arg name="dao" ref="EmployeeDao"></constructor-arg>
+    </bean>
+   
+  <!--  构造注入:集合类型-->
+   <bean id="collectionBean" class="com.etcxm_03DI_Constructor_xml.CollectionBean">
+      <!-- set集合 -->
+      <constructor-arg name="set">
+       <set>
+         <value>set1</value>
+         <value>set2</value>
+         <value>set3</value>
+       </set>
+      </constructor-arg>
+     <!--  list集合  -->
+      <constructor-arg name="list">
+        <list>
+           <value>list1</value>
+           <value>list2</value>
+           <value>list3</value>
+        </list>
+      </constructor-arg>
+      
+      <!-- 数组集合  -->
+      <constructor-arg name="array">
+        <array>
+           <value>array1</value>
+           <value>array2</value>
+           <value>array3</value>
+        </array>
+      </constructor-arg>
+      
+    <!--   map集合 -->
+      <constructor-arg name="map">
+        <map>
+           <entry key="key1"  value="val1"></entry>
+           <entry key="key2"  value="val3"></entry>
+        </map> 
+      </constructor-arg>
+      
+     <!--  Props集合 -->
+      <constructor-arg name="prop">
+        <!-- <props>
+           <prop key="p1">pV1</prop>
+           <prop key="p2">pV2</prop>
+           <prop key="p3">pV3</prop>
+        </props> -->
+        <value>
+          p1=pv1
+          p2=pv2
+          p3=pv3
+        </value>
+      </constructor-arg>
+   </bean> 
+    
+  
+</beans>

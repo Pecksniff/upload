@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
+    <wb-module deploy-name="Day01_Spring">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resoures"/>
+        <property name="context-root" value="/Day01_Spring"/>
+        <property name="java-output-path" value="/Day01_Spring/WebRoot/WEB-INF/classes"/>
+=======
+    <wb-module deploy-name="Day02_Spring">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resoures"/>
+        <property name="context-root" value="/Day02_Spring"/>
+        <property name="java-output-path" value="/Day02_Spring/WebRoot/WEB-INF/classes"/>
+>>>>>>> day02 Spring
+    </wb-module>
+</project-modules>

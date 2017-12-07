@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<<<<<<< HEAD
+    <!-- bean definitions here -->
+    <!-- 把对象的创建权交给Spring容器 
+       id:给当前bean 取名 唯一
+       class:需要交给Spring容器管理类的全限定名
+    -->
+    <bean id="HelloWorld" class="com.etcxm._04Ioc.HelloWorld">
+      <!-- 给属性设置值:张菲菲 -->
+      <property name="username" value="张菲菲"></property>
+    </bean>
+=======
+    
+    
+      
+>>>>>>> day02 Spring
+
+</beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+    xmlns="http://www.springframework.org/schema/beans"
+    
+    xmlns:context="http://www.springframework.org/schema/context"
+    
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd"
+        >
+     <!-- Spring3.0之前  需要配置 自动注解注入 -->   
+    <context:annotation-config></context:annotation-config>
+    
+    <!-- 扫描spring需要管理的bean -->
+    <context:component-scan base-package="com.etcxm_08_Ioc_auto"></context:component-scan>
+    
+     
+  
+</beans>

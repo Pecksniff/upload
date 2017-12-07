@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+<<<<<<< HEAD
+  name="Day01_Spring"
+  id="myeclipse.1511835619454"
+  context-root="/Day01_Spring"
+  j2ee-spec="6.0"
+  archive="Day01_Spring.war">
+=======
+  name="Day02_Spring"
+  id="myeclipse.1512007245867"
+  context-root="/Day02_Spring"
+  j2ee-spec="6.0"
+  archive="Day02_Spring.war">
+>>>>>>> day02 Spring
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

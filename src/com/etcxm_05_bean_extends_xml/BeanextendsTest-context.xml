@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+        >
+
+
+<!-- abstract="true"  这是Spring就不需要实例化 -->
+     <bean id="baseDao"  abstract="true" >
+         <property name="connection" value="获取数据库连接"></property>
+     </bean>
+
+     <!-- 配置dao  -->
+     <bean id="employeeDao" class="com.etcxm_05_bean_extends_xml.EmployeeDao" 
+     parent="baseDao"> 
+     </bean>
+     
+     <bean id="departmentDao" class="com.etcxm_05_bean_extends_xml.DepartmentDao"
+      parent="baseDao"> 
+     </bean>
+     
+     
+     
+     
+   
+    
+  
+</beans>

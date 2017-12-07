@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+        >
+
+     <!-- 配置dao  -->
+     <bean id="userDao" class="com.etcxm_04_register_xml.dao.UserDao">
+       <property name="connection" value="获取数据库连接"></property>
+     </bean>
+     
+      <!-- 配置service  -->
+     <bean id="userService" class="com.etcxm_04_register_xml.service.UserService">
+       <property name="dao" ref="userDao"></property>
+     </bean>
+     
+     
+      <!-- 配置action  -->
+     <bean id="userAction" class="com.etcxm_04_register_xml.Action.UserAction">
+       <property name="service" ref="userService"></property>
+     </bean>
+     
+     
+   
+    
+  
+</beans>
